@@ -177,6 +177,63 @@
 
 // "----------------------------------------------------------------------"
 
+// Javascript errors and error handling------------------------------------------
+
+// "use strict"
+
+// variable = "anshul"
+// console.log(variable)    // reference error
+  
+
+
+// Object..create()       // syntax error
+
+// const name = "anshul"
+// name = "javed"           //typeerror
+
+
+// const makeError  = () => {
+//     try{
+//        throw new Error("This is a custom error")
+//     }catch(err){
+//      console.error(err.name)
+//      console.error(err.message)
+//      console.error(err.stack)
+//     }finally{
+//         console.log("...finally")
+//     }
+// }
+
+
+// makeError()
+
+
+// "---------------------------------------------------------------------------------------------------------------------------------"
+
+// Closure
+// let x = 1 ;
+  
+// const parentFunction = () => {
+//    let myValue = 2 
+//    console.log(myValue)
+//    console.log(x)
+
+//    function child(){
+//      console.log( x+= 6)
+//    }
+    
+// }
+
+
+// parentFunction()
+
+stepOne()
+
+const stepOne = () => {
+    console.log('step One')
+}
+
+
 
 
 

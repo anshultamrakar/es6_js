@@ -181,11 +181,12 @@
 //     occupation : "Software engineer"
 // }
 
-// const changeOcuupation = ({occupation} , str ) => {
-//   return occupation = str
+
+// const changeOccupation = (person , newOcuupation) => {
+//   return {...person , occupation : newOcuupation}
 // }
 
-// console.log(changeOcuupation(person , "project manager"))
+// console.log(changeOccupation(person , "Programe Manager"))
 
 
 
@@ -455,3 +456,121 @@
 // console.log(combinedObj(obj1, obj2 ))
 
 
+"--------------------------------------------------------------------------------------------------------------------------------------------"
+
+// ES6+ Practice Question Set 3
+
+// 1.Create a function that takes an array of strings as an argument and 
+// returns a string that includes the number of items in the array and the first and last items.
+
+
+// const items = ["apple" , "banana" , "cupcake"]
+
+
+// const formatArray = (items) => {
+//   return `The array has ${items.length} items , and the first element is ${items[0]} and the last element is ${items[items.length - 1]}`
+// }
+
+// const message = formatArray(items)
+// console.log(message)
+
+
+
+// 2.Create a function that takes a product object as an argument and returns a string that includes 
+// the product name, price, and a message based on whether it is in stock or not.
+
+
+// const product = {
+//     name: 'Socks',
+//     price: 249,
+//     inStock: true,
+//   };
+
+//   const formatProduct = ({name , price , inStock}) => {
+//     if(inStock){
+//         return `${name} costs INR ${price} and is in stock`
+//     }
+//   }
+
+//  const message = formatProduct(product)
+//  console.log(message)
+  
+
+// 3.Write a function findPerson that takes an array of person objects and a name as 
+// parameters and returns the object with the matching name, or null if not found.
+
+
+
+
+
+    // Not done yet 
+
+
+
+// 4.Write a function that uses destructuring to extract the first two elements from an array, 
+// and returns them in an object with keys 'first' and 'second'.
+
+// const fruits = ["orange" , "banana", "apple"]
+// const color = ["red", "blue", "green"]
+
+// const pickFirstAndSecond = ([a , b]) => {
+//   return {first :  a , second : b }
+// }
+
+// console.log(pickFirstAndSecond(fruits))
+// console.log(pickFirstAndSecond(color))
+
+
+// 5.Convert the following code to ES6+ syntax with minimum number of characters.
+// function startsWithA(str) {
+//     if(str.charAt(0) === 'A') {
+//           return true;
+//       } else {
+//           return false
+//       }
+//   }
+
+// const startwithA = str => str.charAt(0) === "A" ? true : false
+
+// console.log(startwithA("Akshita"))
+// console.log(startwithA("Jeena"))
+
+// 6.Write an ES6 function to return only the first character of the given array.
+
+
+// const array = [1,2,3,4,5,6]
+// const printFirstCharacter = (array) => {
+//  return array[0]
+// }
+
+// console.log(printFirstCharacter(array))
+
+// 7.Write a function to return the last 5 characters as an array from the given array.
+
+// const myArray  = [0, 1, 1, 2, 3, 5, 8]
+// const printLastFive = (myArray) => {
+//   return 
+// }
+
+
+// Write an ES6 function to return the second element of the given array by multiplying 20 to it.
+
+// const myArray = [1,2,3,5,8]
+
+
+// const printSecondCharacter = ([a , b , ... rest]) =>  b * 20;
+
+
+// console.log(printSecondCharacter(myArray))
+
+
+// 8.Write an ES6 function to return the second element of the given array by adding “Hello” before it.
+// const myName = ["Akshay", "Sweta", "Prerana", "Vinay"]
+// const myFriends = ["Kanika", "Rakesh", "Prerana", "Puja"]
+
+// const sayHello = ([a,  b  , ...rest]) =>  "Hello" + " " + b
+
+
+
+// console.log(sayHello(myName))
+// console.log(sayHello(myFriends))
