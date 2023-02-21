@@ -500,10 +500,16 @@
 // parameters and returns the object with the matching name, or null if not found.
 
 
+// const person = [
+//     {name : "Amay" , age : 25 },
+//     {name : "Akhil", age : 25}
+// ]
 
+// const findPerson = (person , name) => {
+//  return person.find(person => person.name === name) || null 
+// }
 
-
-    // Not done yet 
+// console.log(findPerson(person , "Amay"))
 
 
 
@@ -545,6 +551,7 @@
 
 // console.log(printFirstCharacter(array))
 
+
 // 7.Write a function to return the last 5 characters as an array from the given array.
 
 // const myArray  = [0, 1, 1, 2, 3, 5, 8]
@@ -553,7 +560,7 @@
 // }
 
 
-// Write an ES6 function to return the second element of the given array by multiplying 20 to it.
+// 8.Write an ES6 function to return the second element of the given array by multiplying 20 to it.
 
 // const myArray = [1,2,3,5,8]
 
@@ -564,7 +571,7 @@
 // console.log(printSecondCharacter(myArray))
 
 
-// 8.Write an ES6 function to return the second element of the given array by adding “Hello” before it.
+// 9 .Write an ES6 function to return the second element of the given array by adding “Hello” before it.
 // const myName = ["Akshay", "Sweta", "Prerana", "Vinay"]
 // const myFriends = ["Kanika", "Rakesh", "Prerana", "Puja"]
 
@@ -574,3 +581,107 @@
 
 // console.log(sayHello(myName))
 // console.log(sayHello(myFriends))
+
+
+
+// 10.Write an ES6 function to return sum of all numbers at even indices of the given array
+ 
+
+// const myArray = [2,4,3,7,1,5]
+
+// const sumOfEvenIndices = (myArray) => {
+//   const evenArray = myArray.filter(num => num % 2 === 0)
+//   let sum = 0 ;
+//   for(let i = 0 ; i < evenArray.length ; i++){
+//      sum += evenArray[i]
+//   }
+//   return sum;
+// }
+
+
+//  console.log(sumOfEvenIndices(myArray))
+//  console.log(sumOfEvenIndices([12, 14, 3, 27, 15, 25])) 
+
+
+ 
+
+// console.log(sumOfEvenIndices(myArray))
+
+// 11.Write an ES6 function to return the sum of only first 2 elements of the array 
+ 
+//  const myArray = [10, 4, 3, 7, 1, 5]
+//  const myArray2 = [12, 14, 3, 27, 15]
+
+
+//  const sumFirstTwoElement = ([a, b , ...rest]) =>  a + b
+
+//  console.log(sumFirstTwoElement(myArray))
+//  console.log(sumFirstTwoElement(myArray2))
+
+
+// 12.Write an ES6 function to return the first element which is a multiple of 5 in the given array.
+
+// const myArray = [7, 4, 10, 7, 5, 3]
+
+// const printMultipleOfFive = (myArray) => {
+//     return myArray.find((num) => num % 5 === 0)
+// }
+//     console.log(printMultipleOfFive(myArray))
+//     console.log(printMultipleOfFive([7, 5, 10, 7, 15, 3])) 
+
+
+// 13. Create a function which takes in the given object and returns another object only with
+//  the properties postalCode and city in it.
+// const user = {
+//     name : "Jane Doy",
+//     postalCode : "12134",
+//     city : "Germany"
+// }
+
+// const getAddress = ({postalCode , city}) => {
+//  return { postalCode , city}
+// }
+
+
+// console.log(getAddress(user))
+
+// 14.Create a function which takes in the given object and returns a sentence which indicates name of the person and where the person lives
+
+
+//  const userData1 = {
+//     name: 'Gaurav',
+//     postalCode: '12134',
+//     country: 'Japan',
+//   }
+
+//   const userData2 = {
+//     name: 'Pritam',
+//     postalCode: '560223',
+//     country: 'India',
+//   }
+
+//   const printData = ({name , country}) => {
+//    return `${name} lives in ${country}`
+//   }
+
+//   console.log(printData(userData1))
+//   console.log(printData(userData2))
+
+
+// 15.Create a function which takes a product object and returns a sentence about the product using ES6 features.
+
+// const product = {
+//     name: "Apple MacBook Air 2020",
+//       specification: {
+//           capacity: "256GB",
+//         size: "13.3 Inch"
+//       },
+//     price: 82900
+//   }
+
+//   const printProductDetails = ({name , specification : {capacity , size}}) => {
+//    return `${name} which is of  ${size} has a capacity of ${capacity}`
+//   }
+
+
+//   console.log(printProductDetails(product))
