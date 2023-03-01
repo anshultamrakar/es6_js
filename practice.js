@@ -228,9 +228,7 @@
 
 // 1.Write a function that takes a string as input and returns the string in all uppercase letters.
 
-// const stringToUpperCase = (str) => {
-//    return str.toUpperCase()
-// }
+// const stringToUpperCase = str =>  str.toUpperCase()
 
 // console.log(stringToUpperCase("hello"))
 
@@ -376,8 +374,6 @@
 
 // console.log(sumFirstElement([1,2,3]))
   
-
-
 
 // 12.Write a function that takes an array and returns the sum of first and last element.
 
@@ -714,6 +710,7 @@
 
 // console.log(calculateAvg(array))
 
+
 // 3.write an ES6 function that takes an array of numbers and converts even numbers to odd numbers by adding 1 to that number.
 
 // var numArr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -808,6 +805,7 @@
     // console.log(checkForTeam({firstName: 'John', lastName: 'Dee', team: "B"}))
     // console.log(checkForTeam({firstName: 'Priya', lastName: 'Raj'}))
 
+
 // 9.Destructure the following code to get the desired outputs. Avoid using in-built methods.
 
 
@@ -817,18 +815,13 @@
 //     publisher: {name: 'O\'Reilly Media', location: 'CA'}
 // };
 
-// const {title , authors : [{name : author1} , {name : author2}] , publisher : {name : publisherName}} = book 
+// const {title , authors : [{name : author1} , {name : author2}] , publisher : {name : publisherName} } = book
 
 
 // console.log(title)
 // console.log(author1); // David Flanagan 
 // console.log(author2); // Yukihiro Matsumoto
 // console.log(publisherName); // O'Reilly Media
-
-
-
-
-
 
 
 // 10.Write an ES6 function that takes an array of objects and returns the sum of all ages.
@@ -864,7 +857,6 @@
 //   }
 //   return sum ;
 // }
-
 
 // console.log(sumOfAllAges(array))
 
