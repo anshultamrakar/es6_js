@@ -352,7 +352,6 @@
 // console.log(firstStudent(students))
 
 
-
 // 12.Write an ES6 function that takes an array of objects containing Bollywood movie information (title, director, year, rating) and 
 // returns an array with only the movie titles that were made before 1990 and has a rating above 8.0. (Question Level: tough)
 
@@ -377,4 +376,45 @@
 
 
 
- 
+
+
+// Reduce Function -------------------------------------------------------------------------------------------------------------------------
+
+const array = [1,2,3,4,5,6,7,8]
+
+
+// Given the Array of numbers return an object for each items
+
+
+
+// Given the array of numbers calculate the sum
+
+// const getSum = array.reduce((acc , currVal) => acc + currVal)
+// console.log(getSum)
+
+
+// write a function which can tell whether anumber is less than 10 or not. Supply this function to Array.filter() to get an array
+// with no 10s in
+
+// Find the sum of all odd numbers 
+// Find the sum of all number at odd indices 
+// Find the biggest number in an array 
+// Find the number divisible by 10
+
+// Return a array of numbers where odd numbers are incremented by one and even numbers are decremented by one
+// Return an object with sum of odd numbers and even numbers seperately
+
+
+
+// Given the array of string
+
+// Find the number of string with similar number of character
+// const input = ["apple", "banana", "mango", "papaya"]
+
+// output : {5 : 3 , 6 : 1}
+
+// Return the array with string which have vowels
+// Return an array of objects with key as an items and value as numbers of character in string 
+
+
+
