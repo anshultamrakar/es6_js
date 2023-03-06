@@ -217,6 +217,8 @@
 //----------------------------------Functional Programming 2 ------------------------------------------------------------------------------//
 
 
+
+
 // 1.Given an array of objects representing people, write an ES6 function to return a new array containing only the names of the people.
 
 // const people = [
@@ -678,4 +680,36 @@
 // console.log(getAverageScore(students))
 
 
+//13. Write an ES6 function that takes an array of objects representing products with properties name, price, and quantity, and 
+// returns the total cost of all the products using the reduce function.
+
+// const products = [
+//     { name: 'Shirt', price: 20, quantity: 2 },
+//     { name: 'Pants', price: 30, quantity: 1 },
+//     { name: 'Shoes', price: 50, quantity: 1 },
+//     { name: 'Hat', price: 10, quantity: 3 },
+//   ];
+
+// const getTotalCost = products => products.reduce((acc , {price , quantity}) =>  (price * quantity) ? acc + (price * quantity) : acc ,0 )
+
+// console.log(getTotalCost(products))
+
+
+
+// 14.Write an ES6 function that takes an array of strings and returns a single string 
+// that is the concatenation of all the strings using the reduce function.
+
+// const strings = ['Hello', ' ', 'world', '!'];
+
+
+// const concatenateString = strings => strings.reduce((acc , value) => acc + value)
+// console.log(concatenateString(strings))
+
+
+// 15.Write an ES6 function that takes an array of numbers and returns the minimum number using the reduce function.
+
+//  const numbers = [10, 5, 8, 3, 6 , 1 ];
+
+// const getMinimumNumber = numbers => numbers.reduce((acc , value) => value < acc ? value : acc )
+// console.log(getMinimumNumber(numbers))
 
