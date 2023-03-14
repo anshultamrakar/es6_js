@@ -334,9 +334,6 @@
 
 // console.log(firstStudent(students))
 
-
-
-
 // 11.Write an ES6 function that takes an array of objects representing students with properties name and grade. 
 // Return the first student object that has a grade of "B" and they are also a scholarship student.
 
@@ -377,9 +374,6 @@
 //   console.log(getMovies(bollywoodMovies))
 
 
-
-
-
 // Reduce Function -------------------------------------------------------------------------------------------------------------------------
 
 // const array = [1,2,3,4,5,6,7,8]
@@ -400,12 +394,35 @@
 // write a function which can tell whether anumber is less than 10 or not. Supply this function to Array.filter() to get an array
 // with no 10s in
 
+
+// const arr = [2,3,4,5,12,15]
+
+// const islessThan10 = num => num > 10 
+// const newArray = arr => arr.filter(islessThan10)
+// console.log(newArray(arr))
+
 // Find the sum of all odd numbers 
-// Find the sum of all number at odd indices 
+//  const myArray = [2,3,4,5,6,7,8]
+
+
+// const sumOfEven = myArray => myArray.reduce((acc , value) => value % 2 !== 0 ? acc + value : acc , 0)
+
+// console.log(sumOfEven(myArray))
+
+// Find the sum of all number at odd indices
+//   const oddIndices = myArray => myArray.reduce((acc , value, currIndex) => acc[currIndex] % 2 !== 0 ? acc + value : acc , 0)
+//   console.log(oddIndices(myArray))
+
 // Find the biggest number in an array 
+
+// const myArray = [2,4,5,6,7,8, 18,1]
+
+// const getBiggestNum = myArray => myArray.reduce((acc , value) => acc < value ? value : acc , 0)
+// console.log(getBiggestNum(myArray))
 // Find the number divisible by 10
 
 // Return a array of numbers where odd numbers are incremented by one and even numbers are decremented by one
+
 // Return an object with sum of odd numbers and even numbers seperately
 
 
@@ -413,7 +430,6 @@
 // Given the array of string
 
 // Find the number of string with similar number of character
-// const input = ["apple", "banana", "mango", "papaya"]
 
 // output : {5 : 3 , 6 : 1}
 
@@ -427,12 +443,9 @@
 // Practice Questions --- Neog questions
 // Given an array of numbers, write a function that returns the sum of all the even numbers.
 // const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
-// // Output: 20
-
-// const sumOfEvenNum = (numbers) => numbers.reduce((acc , val) => val % 2 === 0 ? acc + val : acc, 0)
-// console.log(sumOfEvenNum(numbers))  
-
-
+// const isEven = (acc , value ) => value % 2 === 0 ? acc + value : acc
+// const sumOfEvenNumbers = numbers => numbers.reduce(isEven,0)
+// console.log(sumOfEvenNumbers(numbers))
 
 
 // Given an array of strings, write a function that returns the total number of characters in all the strings that start with the letter "A".
@@ -546,7 +559,7 @@
 // const products = [
 //   { name: "Toothbrush", price: 29, category: "health" },
 //   { name: "Coffee Maker", price: 99, category: "home" },
-// 	{ name: "iPad", price: 799, category: "electronics" },
+// 	 { name: "iPad", price: 799, category: "electronics" },
 //   { name: "Smartwatch", price: 199, category: "electronics" },
 // ];
 
@@ -789,8 +802,6 @@
 //     { name: 'Charlie', age: 35 },
 //     { name: 'David', age: 40 }
 //   ];
-// const getAverageAge = people => people.reduce((acc , value) =>  acc + value.age ,0)
-// console.log(getAverageAge(people))
 
 
 
@@ -812,12 +823,67 @@
 // 10. Write an ES6 function that takes an array of strings and returns an object with the count of each string.
 
 // const fruits = ['apple', 'banana', 'banana', 'cherry', 'apple', 'apple', 'banana'];
+// output {'apple' : '3 , banana : '2' , cherry : '1' }
+// const input = ["apple", "banana", "mango", "papaya"]
+// {5 : 3 , 6 : 1}
+
 
 // const countStrings = fruits => fruits.reduce((acc , value) => (acc[value] = acc[value]+1 || 1 , acc), {})
+// const countStrings = fruits => fruits.reduce((acc , value) => (acc[value] = acc[value] + 1 || 1 , acc),{})
 
 // console.log(countStrings(fruits))
 
 
+
+
+// More questions on reduce method //
+
+// const books = [
+//     { title: 'The Alchemist', author: 'Paulo Coelho', pages: 197 },
+//     { title: 'To Kill a Mockingbird', author: 'Harper Lee', pages: 281 },
+//     { title: 'The Great Gatsby', author: 'F. Scott Fitzgerald', pages: 180 },
+//   ]
+//  const totalPage = (acc , value) =>  acc + value.pages
+ 
+//  const getTotalPages = books => books.reduce(totalPage , 0)
+//  console.log(getTotalPages(books))
+
+
+// const friends = [
+//     { name: "Joey", books: ["Bible", "Harry Potter"], age: 18 },
+//     { name: "Monica", books: ["War and peace", "Romeo and Juliet"], age: 19 },
+//     { name: "Ross", books: ["The Lord of the Rings", "The Shining"], age: 20 }
+//   ];
+
+// const getBooksArray = friends => friends.reduce((acc , value) =>  [...acc ,  ...value.books], [])
+// console.log(getBooksArray(friends))
+
+
+// Write a function that uses `reduce` to find the user who has the most number of friends.
+// const users = [
+//   { id: 1, name: 'Alice', friends: ["Bob", "Charlie", "David"] },
+//   { id: 2, name: 'Bob', friends: ["Alice", "Charlie", "Eve"] },
+//   { id: 3, name: 'Charlie', friends: ["Alice", "Bob", "David", "Eve"] },
+//   { id: 4, name: 'David', friends: ["Alice", "Charlie"] },
+//   { id: 5, name: 'Eve', friends: ["Bob", "Charlie"] },
+// ];
+
+
+// const getMostFriends = users => users.reduce((acc , value) =>  acc.friends.length <  value.friends.length ? value : acc).name
+// console.log(getMostFriends(users))
+
+
+// Write a function that uses reduce to calculate the total revenue generated by the store from all the orders. 
+// Assume that the revenue from each order is the sum of the prices of all the items in the order.
+
+const orders = [
+  { id: 1, items: [{ name: 'book', price: 10 }, { name: 'pen', price: 2 }] },
+  { id: 2, items: [{ name: 'shirt', price: 20 }, { name: 'pants', price: 30 }] },
+  { id: 3, items: [{ name: 'hat', price: 15 }, { name: 'socks', price: 5 }] },
+];
+
+const calculateRevenue = orders => orders.reduce((acc , value) => value.items.price)
+console.log(calculateRevenue(orders))
 
 
 
